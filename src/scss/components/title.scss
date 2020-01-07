@@ -1,0 +1,13 @@
+.subtitle{
+  font-size: em(40);
+  font-weight: 700;
+  border-bottom: 1px solid $pColor;
+  display: inline-block;
+  margin-bottom: em(40,40);
+  padding-bottom: em(10,40);
+
+  &--small{
+    font-size: (23);
+    border-bottom: 3px solid $pColor;
+  }
+}

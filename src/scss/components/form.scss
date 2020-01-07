@@ -1,0 +1,36 @@
+.input-container{
+
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 0 50px 0;
+
+  input, textarea {
+    width: 100%;
+    border: 1px solid $sColor;
+    color: $sColor;
+    padding: 15px 30px;
+
+    &:focus{
+      border-color: $pColor;
+    }
+  }
+
+  & label {
+    font-size: 12px;
+    color: #8c8fa8;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    transition: transform .15s ease-in-out;
+  }
+
+  &.fill{
+    label{
+      transform: translate(-30px,-40px);
+    }
+  }
+
+
+}

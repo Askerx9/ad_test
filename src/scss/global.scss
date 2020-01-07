@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  font-size: $browser-context;
+  line-height: 1.8;
+  color: $sColor;
+  @media (max-width: 1281px) {
+    font-size: em(16);
+  }
+  @media (max-width: $mq-mobile) {
+    font-size: em(14);
+  }
+}
+
+.container{
+  width: percentage(1202 / 1920);
+  max-width: 1202px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $mq-mobile) {
+    width: 90%;
+  }
+}
+
+.color{
+  color: $pColor
+}

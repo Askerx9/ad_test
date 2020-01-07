@@ -1,0 +1,132 @@
+header{
+  padding-top: em(55);
+  color: #fff;
+  margin-bottom: em(125);
+  position: relative;
+  background: url(../images/header_bg.jpeg) no-repeat center bottom fixed;
+
+  &:after{
+    content: "";
+    width: 100%;
+    height: 20%;
+    background: url(../images/header_mask.svg) no-repeat center bottom;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  & .hero{
+    width: percentage(1615/1920);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .header__txt{
+    padding: em(200) 0;
+    p:first-child{
+      text-transform: uppercase;
+      margin-bottom: em(5);
+    }
+
+    p:last-child{
+      font-size: em(40);
+    }
+  }
+}
+
+.intro{
+  font-size: em(26);
+  margin-bottom: em(140, 26);
+}
+
+.function{
+  margin-bottom: em(140, 26);
+  &__txt{
+    margin-bottom: em(95);
+  }
+
+  &__grid{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mq-mobile) {
+      flex-direction: column;
+    }
+    div{
+      flex-basis: 48%;
+
+    }
+  }
+}
+
+.grid{
+  margin-bottom: em(140, 26);
+  & .row{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $mq-mobile) {
+      flex-direction: column;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    & > * {
+      flex-basis: 50%;
+      @media (max-width: $mq-mobile) {
+        flex-basis: 100%;
+      }
+    }
+
+    & img{
+      width: 50vw;
+      object-fit: cover;
+      @media (max-width: $mq-mobile) {
+        width: 100%;
+      }
+    }
+
+    &__txt{
+      background: #faf4ec;
+      height: 50vw;
+      display: flex;
+      align-items: center;
+      @media (max-width: $mq-mobile) {
+        height: auto;
+        padding: 40px 0;
+      }
+
+      & > div{
+        width: percentage(570/960);
+        margin: 0 auto;
+      }
+
+      & h3 {
+        font-size: em(35);
+        margin-bottom: (25);
+      }
+    }
+  }
+}
+
+.form{
+  display: flex;
+  margin-bottom: 60px;
+  @media (max-width: $mq-mobile) {
+    flex-direction: column;
+  }
+
+  & form{
+    flex-basis: 70%;
+    margin-right: 30px;
+  }
+  & .contact {
+    width: 250px;
+    @media (max-width: $mq-mobile) {
+      width: 100%;
+    }
+  }
+
+}
